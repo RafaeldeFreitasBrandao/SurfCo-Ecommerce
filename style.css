@@ -5,7 +5,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    background-color: rgb(237, 227, 198);
+    background-color: rgb(115, 122, 145);
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -23,7 +23,7 @@ body {
     padding-block: clamp(10px, 2vh, 24px);
     padding-inline: 4vw;
 
-    background-color: rgb(205, 206, 218);
+    background-color: rgb(86, 90, 121);
 
     position: sticky;
     top: 0;
@@ -34,14 +34,16 @@ body {
     font-family:fantasy;
     font-weight: 250;
     font-style: oblique;
-     font-size: clamp(1.5rem, 5vw, 4rem);
+     font-size: clamp(1.5rem, 5vw, 5rem);
     line-height: 1.1;
 
     margin: 0;
 
     margin-left:4vw;
 
-    color: rgb(20, 0, 132);
+    color: rgb(253, 253, 255);
+
+    border-bottom: 2px solid wheat;
 }
 
 .cover_page {
@@ -412,7 +414,20 @@ body {
     height:50vh;
     width: 20vw;
 
-    background-color: rgb(187, 180, 231);
+    background-color: rgb(59, 62, 84);
+
+    border-radius: 20px;
+    box-shadow: 10px 4px 25px 3px#222;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.products_box:hover {
+    cursor: pointer;
+
+    transform: scale(1.06);
+    box-shadow: 12px 8px 30px rgba(58, 58, 58, 0);
 }
 
 .products_box img {
@@ -424,7 +439,8 @@ body {
 .products_box .title {
     position: static; 
     font-size: clamp(0.3rem,2.5vw, 2rem);
-    border-bottom: 2px solid #000000;
+    color: #fbfafa;
+    border-bottom: 2px solid #fcfafa;
     margin-top: -3vh;
 }
 
@@ -441,6 +457,17 @@ body {
     width: 10vw;
 
     font-size: clamp(1rem, 2vw, 1.5rem);
+    background-color: rgb(255, 255, 255);
+
+    border: none;
+    border-radius: 5%;
+
+    transition: background-color 0.3s ease;
+
+}
+
+.button:hover {
+    background-color: #555;
 }
 
 
