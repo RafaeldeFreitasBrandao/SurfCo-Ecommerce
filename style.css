@@ -28,6 +28,8 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+
+    gap: 4vw;
 }
 
 .nav_bar h1 {
@@ -44,6 +46,32 @@ body {
     color: rgb(253, 253, 255);
 
     border-bottom: 2px solid wheat;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    font-size: clamp(1.5rem, 1.5vw, 3rem);
+
+    margin-top: 1vh;
+
+    gap: 3vw;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fcfafa;
+
+    border-bottom: 1px solid #d9d3d300;
+
+    transition: border-bottom 0.4s ease;
+}
+
+.nav-links a:hover {
+    border-bottom: 1px solid #fbfbfb;
 }
 
 .cover_page {
@@ -359,6 +387,7 @@ body {
 .accordion .item .desc {
     display: flex;
     flex-direction: column;
+    align-items: center;
     max-height: 0px;
     opacity: 0;
     overflow: hidden;
@@ -389,9 +418,17 @@ body {
     color:#222;
 }
 
-.accord .item .desc button {
-    height: 40px;
-    width: 10px;
+.accordion .item .desc button {
+    height: 5vh;
+    width: 8vw;
+    background-color: #ffffff;
+    border-style: none;
+    
+    transition: background-color 0.3s ease;
+}
+
+.accordion .item .desc button:hover {
+    background-color: #d9d3d3;
 }
 
 .products_content {
@@ -457,28 +494,90 @@ body {
     width: 10vw;
 
     font-size: clamp(1rem, 2vw, 1.5rem);
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(253, 253, 253);
 
     border: none;
     border-radius: 5%;
 
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 
 }
 
-.button:hover {
-    background-color: #555;
+.button button:hover {
+    background-color: #b7b3b3;
+    
+    transform: scale(1.05)
 }
 
+/*/////////////////////////////////////////-- INDEX_STRAP.HTML ////////////////////////////////////////////////////////////////////*/
 
 
+.cart_main_content {
+    display:flex;
+    flex-direction: row;
 
+    margin-top: 50px;
 
+    gap: 2vw;
+}
 
+.items_list {
+    height:60vh;
+    width:50vw;
 
+    background-color: #fbfafa;
+}
 
+.price_content {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
 
+    gap: 1vw;
+}
 
+.cart_price {
+    height: 40vh;
+    width: 40vw;
+
+    background-color: #ffffff;
+}
+
+.pay_format {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+
+    height:fit-content;
+    width: 40vw;
+
+    background-color: #ffffff;
+}
+
+.price_content button {
+    margin-top:50px;
+
+    height:10vh;
+    width: 20vw;
+
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+
+    border-radius: 50px;
+    border-style: none;
+
+    background-color: #e2dcdc;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.price_content button:hover {
+
+    transform: scale(1.05);
+
+    background-color:#b7b3b3;
+}
 
 
 

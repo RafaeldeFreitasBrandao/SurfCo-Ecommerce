@@ -1,20 +1,20 @@
-let items = document.querySelectorAll(".accordion .item");
+let title = document.querySelectorAll(".accordion .item .title");
 
-for (let i = 0; i < items.length; i++) {
-    items[i].addEventListener("click", function () {
+title.forEach(title => {
+    title.addEventListener("click", function () {
+        // Obtém o item pai correspondente ao título clicado
+        let item = this.parentElement;
 
-        if (items[i].classList.contains("active")) {
-            items[i].classList.remove("active");
-        } else {
-            let activeNode = document.querySelector(".accordion .item.active");
+        // Verifica se já existe um item ativo
+        let activeNode = document.querySelector(".accordion .item.active");
 
-            if (activeNode) {
-                activeNode.classList.remove("active");
-            }
-
-            items[i].classList.add("active");
+        // Se houver um item ativo e não for o atual, remove a classe
+        if (activeNode && activeNode !== item) {
+            activeNode.classList.remove("active");
         }
 
+        // Alterna o estado do item clicado
+        item.classList.toggle("active");
     });
-}
+});
 
