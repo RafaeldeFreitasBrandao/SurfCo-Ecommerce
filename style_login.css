@@ -12,7 +12,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.login_box {
+.log_box {
 
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ body {
     justify-content: center;
 
 
-    height: 70vh;
+    height: 80vh;
     width: 30vw;
     
 
@@ -35,25 +35,27 @@ body {
 
 }
 
-.login_box h1 {
+.log_box h1 {
 
     font-size: clamp(1.5rem,2vw,3rem );
+    margin-bottom:-10px;
 
 }
 
-.login_box p {
+.log_box p {
     font-size: clamp(1.5rem,2vw,1.5rem );
 }
 
-.login_input {
-    margin: -10px;
+.log_input {
+    margin-top: -20px;
+    margin-bottom: -10px;
 }
 
-.login_input p {
+.log_input p {
     font-size: clamp(1rem, 1.5vw, 1.2rem)
 }
 
-.login_input input {
+.log_input input {
     height: 6vh;
     width: 20vw;
 
@@ -62,12 +64,55 @@ body {
 
 }
 
-.login_box button {
+.log_box button {
 
-    margin-top: 15px;
+    margin-top: 35px;
 
     height: 7vh;
     width: 13vw;
 
-    font-size:clamp(1rem,1.5vw,1.3rem)
+    font-size:clamp(1rem,1.5vw,1.3rem);
+
+    border-radius: 10px;
+    border-style: none;
+
+    background-color: rgb(105, 104, 104);
+
+    transition: background-color 0.3s ease;
+}
+
+.log_box button:hover {
+
+    background-color: rgb(171, 170, 170);
+
+}
+
+.log_box a {
+    font-size: clamp(1rem, 2vw, 1.1rem);
+
+    text-decoration: none;
+    color: rgb(99, 98, 98);
+
+    border-bottom: 1px solid #00000000;
+    transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+.log_box a:hover {
+    border-bottom: 1px solid #242323f9;
+    color: #242323f9;
+}
+
+.pass-inst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.pass-inst p {
+
+    font-size: clamp(0.5rem, 1vw, 1.1rem);
+    margin: 4px;
+
 }
